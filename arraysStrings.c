@@ -184,6 +184,8 @@ int wc(char *textFile){
 		nChars++;	
 	}
 	fclose(infp);
+	//check for edge case
+	if(inWord) nWords++;
 	printf("   %d %d %d %s\n",nLines,nWords,nChars,textFile);
 	return 0;
 }
